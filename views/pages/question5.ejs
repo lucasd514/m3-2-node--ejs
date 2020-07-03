@@ -12,8 +12,12 @@
     <div class="content">
       <%- include('../partials/questions/5') %>
       <div class="box answer">
-        <h3>Answer</h3>
-        <!-- render answer here -->
+        <h3>top 5 girl names UK</h3>
+        <ol>
+          <% popularGirlNames.forEach((name, index) => { %>
+          <li><%= ++index %>. <%= name %></li>
+          <% }) %>
+        </ol>
       </div>
     </div>
   </div>

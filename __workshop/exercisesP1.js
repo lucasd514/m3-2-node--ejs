@@ -42,7 +42,7 @@ const q3 = (req, res) => {
 // -----------------------------------------------
 const q4 = (req, res) => {
   const popularGirlNames = ["Olivia", "Ruby", "Emily", "Grace", "Jessica"];
-  const names = popularGirlNames.slice(0, 3);
+  const names = popularGirlNames.slice((0, 3));
   res.render("pages/question4", { names });
 };
 
@@ -52,7 +52,7 @@ const q4 = (req, res) => {
 const q5 = (req, res) => {
   const popularGirlNames = ["Olivia", "Ruby", "Emily", "Grace", "Jessica"];
 
-  res.render("pages/question5");
+  res.render("pages/question5", { popularGirlNames });
 };
 
 // We export the functions so that they may be 'required' or imported in other files.
