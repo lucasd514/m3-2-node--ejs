@@ -13,7 +13,7 @@ const q8 = (req, res) => res.render("pages/question8");
 const q9 = (req, res) => res.render("pages/question9");
 const q10 = (req, res) => res.render("pages/question10");
 const hP = (req, res) => res.render("pages/homepage");
-
+const fourOh = (req, res) => res.render("pages/quattrozeroquattro");
 express()
   // This will give us will log more info to the console. see https://www.npmjs.com/package/morgan
   .use(morgan("tiny"))
@@ -34,6 +34,7 @@ express()
   .get("/question9", q9)
   .get("/question10", q10)
   .get("/", hP)
+  .get("*", fourOh)
 
   // this serves up the homepage
   // .get('/', (req, res) => {
